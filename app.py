@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 
 # Load datasets
-data = pd.read_csv('Copyy.csv', encoding='latin-1')
+data = pd.read_csv('copyy.csv', encoding='latin-1')
 hotels_data = pd.read_csv('hotel_data.csv')
 
 # Preprocess attractions data
