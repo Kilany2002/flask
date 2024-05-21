@@ -7,9 +7,6 @@ app = Flask(__name__)
 
 
 
-# Load datasets
-data = pd.read_csv('C:/Users/Mohammed/Desktop/Copyy.csv', encoding='latin-1')
-hotels_data = pd.read_csv('C:/Users/Mohammed/Desktop/hotel_data.csv')
 
 # Preprocess attractions data
 selected_columns = ['Destination', 'Duration (days)', 'Activity Preference', 'Budget Range',
