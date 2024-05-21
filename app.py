@@ -2,13 +2,19 @@ from flask import Flask, request, jsonify
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+# import firebase_admin
+# from firebase_admin import credentials, firestore
 
 app = Flask(__name__)
 
+# cred = credentials.Certificate("C:/Users/Mohammed/ghazal-ab4a3-firebase-adminsdk-70ay9-32e5c060cb.json")
+# firebase_admin.initialize_app(cred)
+# db=firestore.client()
+
+
+# Load datasets
 data = pd.read_csv('Copyy.csv', encoding='latin-1')
 hotels_data = pd.read_csv('hotel_data.csv')
-
-
 
 # Preprocess attractions data
 selected_columns = ['Destination', 'Duration (days)', 'Activity Preference', 'Budget Range',
