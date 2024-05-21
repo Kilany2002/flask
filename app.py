@@ -5,8 +5,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 app = Flask(__name__)
 
-data = pd.read_csv('C:/Users/Mohammed/Desktop/Copyy.csv', encoding='latin-1')
-hotels_data = pd.read_csv('C:/Users/Mohammed/Desktop/hotel_data.csv')
+data = pd.read_csv('Copyy.csv', encoding='latin-1')
+hotels_data = pd.read_csv('hotel_data.csv')
 
 
 
